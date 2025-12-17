@@ -1,3 +1,52 @@
 {
-  "seen": {}
+  "seen": {
+    "https://deepmind.google/blog/gemini-3-flash-frontier-intelligence-built-for-speed/": {
+      "savedAt": "2025-12-17T23:09:26.753Z",
+      "file": "content/drafts/2025-12-17-gemini-3-flash-frontier-intelligence-built-for-speed.md"
+    },
+    "https://deepmind.google/blog/improved-gemini-audio-models-for-powerful-voice-experiences/": {
+      "savedAt": "2025-12-17T23:09:59.339Z",
+      "file": "content/drafts/2025-12-12-improved-gemini-audio-models-for-powerful-voice-experiences.md"
+    },
+    "https://deepmind.google/blog/deepening-our-partnership-with-the-uk-ai-security-institute/": {
+      "savedAt": "2025-12-17T23:09:59.976Z",
+      "file": "content/drafts/2025-12-11-deepening-our-partnership-with-the-uk-ai-security-institute.md"
+    },
+    "https://deepmind.google/blog/strengthening-our-partnership-with-the-uk-government-to-support-prosperity-and-security-in-the-ai-era/": {
+      "savedAt": "2025-12-17T23:10:00.649Z",
+      "file": "content/drafts/2025-12-10-strengthening-our-partnership-with-the-uk-government-to-support-prosperity-and-security-in.md"
+    },
+    "https://deepmind.google/blog/facts-benchmark-suite-systematically-evaluating-the-factuality-of-large-language-models/": {
+      "savedAt": "2025-12-17T23:10:01.261Z",
+      "file": "content/drafts/2025-12-09-facts-benchmark-suite-systematically-evaluating-the-factuality-of-large-language-models.md"
+    },
+    "https://deepmind.google/blog/alphafold-five-years-of-impact/": {
+      "savedAt": "2025-12-17T23:10:02.283Z",
+      "file": "content/drafts/2025-11-25-alphafold-five-years-of-impact.md"
+    },
+    "https://deepmind.google/blog/revealing-a-key-protein-behind-heart-disease/": {
+      "savedAt": "2025-12-17T23:10:02.959Z",
+      "file": "content/drafts/2025-11-25-revealing-a-key-protein-behind-heart-disease.md"
+    },
+    "https://deepmind.google/blog/how-were-bringing-ai-image-verification-to-the-gemini-app/": {
+      "savedAt": "2025-12-17T23:10:35.465Z",
+      "file": "content/drafts/2025-11-20-how-were-bringing-ai-image-verification-to-the-gemini-app.md"
+    },
+    "https://deepmind.google/blog/build-with-nano-banana-pro-our-gemini-3-pro-image-model/": {
+      "savedAt": "2025-12-17T23:11:08.097Z",
+      "file": "content/drafts/2025-11-20-build-with-nano-banana-pro-our-gemini-3-pro-image-model.md"
+    },
+    "https://deepmind.google/blog/introducing-nano-banana-pro/": {
+      "savedAt": "2025-12-17T23:11:40.926Z",
+      "file": "content/drafts/2025-11-20-introducing-nano-banana-pro.md"
+    },
+    "https://deepmind.google/blog/start-building-with-gemini-3/": {
+      "savedAt": "2025-12-17T23:12:13.394Z",
+      "file": "content/drafts/2025-11-18-start-building-with-gemini-3.md"
+    },
+    "https://deepmind.google/blog/were-expanding-our-presence-in-singapore-to-advance-ai-in-the-asia-pacific-region/": {
+      "savedAt": "2025-12-17T23:12:13.973Z",
+      "file": "content/drafts/2025-11-18-were-expanding-our-presence-in-singapore-to-advance-ai-in-the-asia-pacific-region.md"
+    }
+  }
 }
