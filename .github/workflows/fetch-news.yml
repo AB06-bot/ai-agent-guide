@@ -1,0 +1,108 @@
+name: Fetch News Drafts
+
+on:
+  schedule:
+    # Run every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    # Allow manual trigger from GitHub UI
+
+# Prevent overlapping runs
+concurrency:
+  group: fetch-news
+  cancel-in-progress: false
+
+jobs:
+  fetch-and-commit:
+    runs-on: ubuntu-latest
+    
+    # Skip if this is a commit from the bot itself or contains [skip ci]
+    if: |
+      github.actor != 'github-actions[bot]' &&
+      !contains(github.event.head_commit.message, '[skip ci]')
+    
+    steps:
+      - name: Log start time
+        run: |
+          echo "🚀 Workflow started at $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "Triggered by: ${{ github.event_name }}"
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Use a token that can trigger workflows (default GITHUB_TOKEN works for Cloudflare Pages)
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Ensure required directories and files exist
+        run: |
+          # Create content/drafts if it doesn't exist
+          mkdir -p content/drafts
+          
+          # Create cache directory if it doesn't exist
+          mkdir -p cache
+          
+          # Initialize seen.json if it doesn't exist
+          if [ ! -f cache/seen.json ]; then
+            echo '{ "seen": {} }' > cache/seen.json
+            echo "📝 Created initial cache/seen.json"
+          fi
+
+      - name: Run fetch:news script
+        run: npm run fetch:news
+        env:
+          # Add any required environment variables here
+          NODE_ENV: production
+
+      - name: Check for changes
+        id: changes
+        run: |
+          # Stage only the files we want to commit
+          git add content/drafts/*.md 2>/dev/null || true
+          git add content/drafts/**/*.md 2>/dev/null || true
+          git add cache/seen.json 2>/dev/null || true
+          
+          # Check if there are staged changes
+          if git diff --staged --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "📭 No new drafts or cache changes to commit"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            CHANGED_COUNT=$(git diff --staged --name-only | wc -l)
+            echo "changed_count=$CHANGED_COUNT" >> $GITHUB_OUTPUT
+            echo "📬 Found $CHANGED_COUNT file(s) with changes:"
+            git diff --staged --name-only
+          fi
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          # Configure git user
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Commit with skip ci to prevent re-triggering
+          git commit -m "chore(news): auto-fetch drafts [skip ci]"
+          
+          # Push changes
+          git push
+          
+          echo "✅ Successfully committed and pushed ${{ steps.changes.outputs.changed_count }} file(s)"
+
+      - name: Log completion
+        run: |
+          echo "🏁 Workflow completed at $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          if [ "${{ steps.changes.outputs.has_changes }}" == "true" ]; then
+            echo "📊 Summary: Committed ${{ steps.changes.outputs.changed_count }} file(s)"
+          else
+            echo "📊 Summary: No changes to commit"
+          fi
+
