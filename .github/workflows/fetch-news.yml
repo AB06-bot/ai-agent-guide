@@ -97,11 +97,22 @@ jobs:
           
           echo "✅ Successfully committed and pushed ${{ steps.changes.outputs.changed_count }} file(s)"
 
+      - name: Ping Google to re-crawl sitemap
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          echo "🔔 Pinging Google to re-crawl sitemap..."
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "https://www.google.com/ping?sitemap=https://ai-agentguide.com/sitemap.xml")
+          if [ "$HTTP_STATUS" == "200" ]; then
+            echo "✅ Google ping successful (HTTP $HTTP_STATUS)"
+          else
+            echo "⚠️ Google ping returned HTTP $HTTP_STATUS (non-fatal)"
+          fi
+
       - name: Log completion
         run: |
           echo "🏁 Workflow completed at $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
           if [ "${{ steps.changes.outputs.has_changes }}" == "true" ]; then
-            echo "📊 Summary: Committed ${{ steps.changes.outputs.changed_count }} file(s)"
+            echo "📊 Summary: Committed ${{ steps.changes.outputs.changed_count }} file(s) and pinged Google"
           else
             echo "📊 Summary: No changes to commit"
           fi

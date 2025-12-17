@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next"
 import { articles } from "@/lib/articles"
+import { dealExplainers } from "@/lib/deals"
+import { researchExplainers } from "@/lib/research"
 import { siteUrl, categoryMeta } from "@/lib/seo"
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -33,6 +35,54 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
-  return [...homePage, ...categoryPages, ...articlePages]
+  // Deals hub page
+  const dealsHubPage: MetadataRoute.Sitemap = [
+    {
+      url: `${siteUrl}/deals`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+  ]
+
+  // Deal detail pages
+  const dealPages: MetadataRoute.Sitemap = dealExplainers
+    .filter((deal) => deal.internalSlug)
+    .map((deal) => ({
+      url: `${siteUrl}/deals/${deal.internalSlug}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+    }))
+
+  // Research hub page
+  const researchHubPage: MetadataRoute.Sitemap = [
+    {
+      url: `${siteUrl}/research`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+  ]
+
+  // Research detail pages
+  const researchPages: MetadataRoute.Sitemap = researchExplainers
+    .filter((research) => research.internalSlug)
+    .map((research) => ({
+      url: `${siteUrl}/research/${research.internalSlug}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+    }))
+
+  return [
+    ...homePage,
+    ...categoryPages,
+    ...articlePages,
+    ...dealsHubPage,
+    ...dealPages,
+    ...researchHubPage,
+    ...researchPages,
+  ]
 }
 
