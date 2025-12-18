@@ -4,7 +4,7 @@ import { Navigation } from "@/components/navigation"
 import { SmartLink } from "@/components/smart-link"
 import { dealExplainers, homepageDeals } from "@/lib/deals"
 import { siteUrl, siteName } from "@/lib/seo"
-import { buildBreadcrumbJsonLd, JsonLdScript } from "@/lib/schema.tsx"
+import { buildBreadcrumbJsonLd, JsonLdScript } from "@/lib/schema"
 
 export const metadata: Metadata = {
   title: "Deals & Credits",

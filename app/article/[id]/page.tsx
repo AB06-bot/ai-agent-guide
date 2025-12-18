@@ -9,7 +9,7 @@ import {
   buildBreadcrumbJsonLd, 
   buildArticleBreadcrumbs,
   JsonLdScript 
-} from "@/lib/schema.tsx"
+} from "@/lib/schema"
 import { use } from "react"
 
 export function generateStaticParams() {

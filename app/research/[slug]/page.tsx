@@ -5,7 +5,7 @@ import { Navigation } from "@/components/navigation"
 import { SmartLink } from "@/components/smart-link"
 import { getResearchBySlug, getAllResearchSlugs, ResearchExplainer } from "@/lib/research"
 import { siteUrl, siteName, truncateText } from "@/lib/seo"
-import { buildBreadcrumbJsonLd, JsonLdScript } from "@/lib/schema.tsx"
+import { buildBreadcrumbJsonLd, JsonLdScript } from "@/lib/schema"
 import { use } from "react"
 
 export function generateStaticParams() {

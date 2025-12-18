@@ -4,7 +4,7 @@ import { Navigation } from "@/components/navigation"
 import { SmartLink } from "@/components/smart-link"
 import { researchExplainers, homepageResearch } from "@/lib/research"
 import { siteUrl } from "@/lib/seo"
-import { buildBreadcrumbJsonLd, JsonLdScript } from "@/lib/schema.tsx"
+import { buildBreadcrumbJsonLd, JsonLdScript } from "@/lib/schema"
 
 export const metadata: Metadata = {
   title: "Research & Development",

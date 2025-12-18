@@ -11,7 +11,7 @@ import {
   buildBreadcrumbJsonLd,
   buildDealBreadcrumbs,
   JsonLdScript,
-} from "@/lib/schema.tsx"
+} from "@/lib/schema"
 import { use } from "react"
 
 export function generateStaticParams() {
