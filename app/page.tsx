@@ -176,36 +176,38 @@ export default function HomePage() {
 
       {/* Hero */}
       <section className="border-b border-neutral-300 relative overflow-hidden">
-        {/* Decorative watermark - purely visual, hidden from screen readers */}
-        <div 
-          className="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0"
-          aria-hidden="true"
-        >
-          <div 
-            className="
-            absolute left-1/2
-            top-[55%] sm:top-1/2
-            flex flex-col items-center 
-            gap-[-0.5rem] sm:gap-0
 
-          "
-          style={{ transform: "translateX(-50%)" }}
-          
-          >
-            <span
-              className="font-black tracking-tighter opacity-[0.03] whitespace-nowrap leading-none"
-              style={{ fontSize: "clamp(4rem, 10vw, 10rem)", transform: "translateX(-10%)" }}
-            >
-              AUTOMATE
-            </span>
-            <span
-              className="font-black tracking-tighter opacity-[0.03] whitespace-nowrap leading-none"
-              style={{ fontSize: "clamp(3rem, 14vw, 10rem)", transform: "translateX(15%)" }}
-            >
-              EVERYTHING
-            </span>
-          </div>
-        </div>
+{/* Decorative watermark – desktop only */}
+<div className="hidden md:block">
+  <div
+    className="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0"
+    aria-hidden="true"
+  >
+    <div
+      className="absolute top-1/2 left-1/2 flex flex-col items-center gap-0"
+      style={{ transform: "translate(-50%, -50%)" }}
+    >
+      <span
+        className="font-black tracking-tighter opacity-[0.03] whitespace-nowrap leading-none"
+        style={{ fontSize: "clamp(4rem, 10vw, 10rem)" }}
+      >
+        AUTOMATE
+      </span>
+
+      <span
+        className="font-black tracking-tighter opacity-[0.03] whitespace-nowrap leading-none"
+        style={{ fontSize: "clamp(4rem, 10vw, 10rem)" }}
+      >
+        EVERYTHING
+      </span>
+    </div>
+  </div>
+</div>
+
+{/* Hero content continues below */}
+
+
+
 
         <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-3 tracking-tight leading-none">The AI Agent Guide</h1>
