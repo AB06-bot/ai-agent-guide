@@ -182,8 +182,15 @@ export default function HomePage() {
           aria-hidden="true"
         >
           <div 
-            className="absolute top-1/2 left-1/2 flex flex-col items-center gap-0"
-            style={{ transform: "translate(-50%, -50%)" }}
+            className="
+            absolute left-1/2
+            top-[55%] sm:top-1/2
+            flex flex-col items-center 
+            gap-[-0.5rem] sm:gap-0
+
+          "
+          style={{ transform: "translateX(-50%)" }}
+          
           >
             <span
               className="font-black tracking-tighter opacity-[0.03] whitespace-nowrap leading-none"
@@ -193,7 +200,7 @@ export default function HomePage() {
             </span>
             <span
               className="font-black tracking-tighter opacity-[0.03] whitespace-nowrap leading-none"
-              style={{ fontSize: "clamp(4rem, 10vw, 10rem)", transform: "translateX(15%)" }}
+              style={{ fontSize: "clamp(3rem, 14vw, 10rem)", transform: "translateX(15%)" }}
             >
               EVERYTHING
             </span>
