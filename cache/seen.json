@@ -383,6 +383,54 @@
     "https://deepmind.google/blog/looking-ahead-to-the-ai-seoul-summit/": {
       "savedAt": "2025-12-19T12:23:04.944Z",
       "file": "content/drafts/2024-05-20-looking-ahead-to-the-ai-seoul-summit.md"
+    },
+    "https://www.microsoft.com/en-us/research/?p=1158079": {
+      "savedAt": "2025-12-19T18:37:50.778Z",
+      "file": "content/drafts/2025-12-11-agent-lightning-adding-reinforcement-learning-to-ai-agents-without-code-rewrites.md"
+    },
+    "https://www.microsoft.com/en-us/research/?p=1157824": {
+      "savedAt": "2025-12-19T18:37:52.750Z",
+      "file": "content/drafts/2025-12-10-promptions-helps-make-ai-prompting-more-precise-with-dynamic-ui-controls.md"
+    },
+    "https://www.microsoft.com/en-us/research/blog/gigatime-scaling-tumor-microenvironment-modeling-using-virtual-population-generated-by-multimodal-ai/": {
+      "savedAt": "2025-12-19T18:37:55.221Z",
+      "file": "content/drafts/2025-12-09-gigatime-scaling-tumor-microenvironment-modeling-using-virtual-population-generated-by-mul.md"
+    },
+    "https://www.microsoft.com/en-us/research/podcast/ideas-community-building-machine-learning-and-the-future-of-ai/": {
+      "savedAt": "2025-12-19T18:37:57.622Z",
+      "file": "content/drafts/2025-12-01-ideas-community-building-machine-learning-and-the-future-of-ai.md"
+    },
+    "https://www.microsoft.com/en-us/research/blog/fara-7b-an-efficient-agentic-model-for-computer-use/": {
+      "savedAt": "2025-12-19T18:38:01.002Z",
+      "file": "content/drafts/2025-11-24-fara-7b-an-efficient-agentic-model-for-computer-use.md"
+    },
+    "https://www.microsoft.com/en-us/research/?p=1153693": {
+      "savedAt": "2025-12-19T18:38:03.735Z",
+      "file": "content/drafts/2025-11-12-mmctagent-enabling-multimodal-reasoning-over-large-video-and-image-collections.md"
+    },
+    "https://www.microsoft.com/en-us/research/?p=1154385": {
+      "savedAt": "2025-12-19T18:38:05.872Z",
+      "file": "content/drafts/2025-11-11-bluecodeagent-a-blue-teaming-agent-enabled-by-automated-red-teaming-for-codegen-ai.md"
+    },
+    "https://www.microsoft.com/en-us/research/?p=1154225": {
+      "savedAt": "2025-12-19T18:38:07.874Z",
+      "file": "content/drafts/2025-11-06-when-industry-knowledge-meets-pike-rag-the-innovation-behind-signifys-customer-service-boo.md"
+    },
+    "https://www.microsoft.com/en-us/research/blog/magentic-marketplace-an-open-source-simulation-environment-for-studying-agentic-markets/": {
+      "savedAt": "2025-12-19T18:38:10.170Z",
+      "file": "content/drafts/2025-11-05-magentic-marketplace-an-open-source-simulation-environment-for-studying-agentic-markets.md"
+    },
+    "https://www.nist.gov/node/1901136": {
+      "savedAt": "2025-12-19T18:38:10.572Z",
+      "file": "content/drafts/2025-12-16-draft-nist-guidelines-rethink-cybersecurity-for-the-ai-era.md"
+    },
+    "https://www.nist.gov/node/1900811": {
+      "savedAt": "2025-12-19T18:38:10.658Z",
+      "file": "content/drafts/2025-12-11-department-of-commerce-announces-transition-of-baldrige-performance-excellence-program.md"
+    },
+    "https://www.nist.gov/node/1898826": {
+      "savedAt": "2025-12-19T18:38:10.905Z",
+      "file": "content/drafts/2025-11-20-building-a-sustainable-metals-infrastructure-nist-report-highlights-key-strategies.md"
     }
   }
 }
