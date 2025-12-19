@@ -287,6 +287,54 @@
     "https://deepmind.google/blog/gemini-2-0-is-now-available-to-everyone/": {
       "savedAt": "2025-12-19T00:55:02.965Z",
       "file": "content/drafts/2025-02-05-gemini-20-is-now-available-to-everyone.md"
+    },
+    "https://deepmind.google/blog/updating-the-frontier-safety-framework/": {
+      "savedAt": "2025-12-19T06:18:19.707Z",
+      "file": "content/drafts/2025-02-04-updating-the-frontier-safety-framework.md"
+    },
+    "https://deepmind.google/blog/facts-grounding-a-new-benchmark-for-evaluating-the-factuality-of-large-language-models/": {
+      "savedAt": "2025-12-19T06:18:20.487Z",
+      "file": "content/drafts/2024-12-17-facts-grounding-a-new-benchmark-for-evaluating-the-factuality-of-large-language-models.md"
+    },
+    "https://deepmind.google/blog/state-of-the-art-video-and-image-generation-with-veo-2-and-imagen-3/": {
+      "savedAt": "2025-12-19T06:18:53.153Z",
+      "file": "content/drafts/2024-12-16-state-of-the-art-video-and-image-generation-with-veo-2-and-imagen-3.md"
+    },
+    "https://deepmind.google/blog/introducing-gemini-20-our-new-ai-model-for-the-agentic-era/": {
+      "savedAt": "2025-12-19T06:19:25.682Z",
+      "file": "content/drafts/2024-12-11-introducing-gemini-20-our-new-ai-model-for-the-agentic-era.md"
+    },
+    "https://deepmind.google/blog/google-deepmind-at-neurips-2024/": {
+      "savedAt": "2025-12-19T06:19:26.600Z",
+      "file": "content/drafts/2024-12-05-google-deepmind-at-neurips-2024.md"
+    },
+    "https://deepmind.google/blog/gencast-predicts-weather-and-the-risks-of-extreme-conditions-with-sota-accuracy/": {
+      "savedAt": "2025-12-19T06:19:27.194Z",
+      "file": "content/drafts/2024-12-04-gencast-predicts-weather-and-the-risks-of-extreme-conditions-with-state-of-the-art-accurac.md"
+    },
+    "https://deepmind.google/blog/genie-2-a-large-scale-foundation-world-model/": {
+      "savedAt": "2025-12-19T06:19:27.957Z",
+      "file": "content/drafts/2024-12-04-genie-2-a-large-scale-foundation-world-model.md"
+    },
+    "https://deepmind.google/blog/alphaqubit-tackles-one-of-quantum-computings-biggest-challenges/": {
+      "savedAt": "2025-12-19T06:20:00.199Z",
+      "file": "content/drafts/2024-11-20-alphaqubit-tackles-one-of-quantum-computings-biggest-challenges.md"
+    },
+    "https://deepmind.google/blog/pushing-the-frontiers-of-audio-generation/": {
+      "savedAt": "2025-12-19T06:22:06.598Z",
+      "file": "content/drafts/2024-10-30-pushing-the-frontiers-of-audio-generation.md"
+    },
+    "https://deepmind.google/blog/new-generative-ai-tools-open-the-doors-of-music-creation/": {
+      "savedAt": "2025-12-19T06:22:07.882Z",
+      "file": "content/drafts/2024-10-23-new-generative-ai-tools-open-the-doors-of-music-creation.md"
+    },
+    "https://deepmind.google/blog/demis-hassabis-john-jumper-awarded-nobel-prize-in-chemistry/": {
+      "savedAt": "2025-12-19T06:22:08.499Z",
+      "file": "content/drafts/2024-10-09-demis-hassabis-and-john-jumper-awarded-nobel-prize-in-chemistry.md"
+    },
+    "https://deepmind.google/blog/how-alphachip-transformed-computer-chip-design/": {
+      "savedAt": "2025-12-19T06:22:09.099Z",
+      "file": "content/drafts/2024-09-26-how-alphachip-transformed-computer-chip-design.md"
     }
   }
 }
